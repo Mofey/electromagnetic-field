@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/layout.tsx","./src/hooks/usecanvasengine.ts","./src/hooks/usesimulationstate.ts","./src/lib/physics.ts","./src/lib/renderer.ts","./src/types/simulation.ts"],"version":"5.9.3"}

@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.orbitron {
+  font-family: "Orbitron", monospace;
+}
+
+.exo {
+  font-family: "Exo 2", sans-serif;
+}
+
+.canvas-container {
+  background: radial-gradient(ellipse at center, #0a1628 0%, #000510 100%);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 40px currentColor;
+}
+
+.panel-glass {
+  background: linear-gradient(135deg, rgba(20, 40, 80, 0.9) 0%, rgba(10, 20, 40, 0.95) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(100, 180, 255, 0.3);
+}
+
+.btn-cyber {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #1e40af 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+  border: 1px solid rgba(147, 197, 253, 0.5);
+  transition: all 0.3s ease;
+}
+
+.btn-cyber:hover {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.6), inset 0 0 20px rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.btn-cyber:active {
+  transform: translateY(0);
+}
+
+.grid-overlay {
+  background-image: linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background: linear-gradient(to right, #1e3a5f, #3b82f6);
+  height: 6px;
+  border-radius: 3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, #60a5fa, #1e40af);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.8);
+}
