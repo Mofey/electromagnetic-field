@@ -182,7 +182,3 @@ Designed for university students studying electromagnetism who need visual intui
 ## Author
 
 Mofetoluwa
-
----
-
-Copyright (c) current year. Made with love by Mofetoluwa.
